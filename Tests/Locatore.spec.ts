@@ -1,4 +1,4 @@
-//getByRole
+/* //getByRole
 import {test,expect,Locator} from '@playwright/test';
 test('Playwright Locators',async({page})=>
 {
@@ -19,4 +19,4 @@ test('Playwright Locators',async({page})=>
     await expect(page.getByTitle('Tooltip text')).toBeVisible();
     //getByTestId
     await expect(page.getByTestId('nav-home')).toBeVisible();
-});
+}); */

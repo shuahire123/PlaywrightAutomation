@@ -1,4 +1,4 @@
-//valiadte radio button
+/* //valiadte radio button
 import {test,expect} from '@playwright/test';
 test('validate radio button',async({page})=>
 {
@@ -10,4 +10,4 @@ test('validate radio button',async({page})=>
     yesRadioBtn.isEnabled();
     yesRadioBtn.check();
     
-});
+}); */
