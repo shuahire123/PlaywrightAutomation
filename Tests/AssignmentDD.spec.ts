@@ -38,4 +38,4 @@ test('Assignment for Dropdown',async({page})=>
 });
 console.log(`maximum price phone name ${maxPhonePrice.name} price ${maxPhonePrice.price} `);
 }
-)
+);
