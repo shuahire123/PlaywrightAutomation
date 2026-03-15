@@ -32,8 +32,8 @@ export default defineConfig({
   use: {
     /* Base URL to use in actions like `await page.goto('')`. */
     // baseURL: 'http://localhost:3000',
-    headless: false, // run headed browser
-    //headless: true, // run headed browser
+    //headless: false, // run headed browser
+    headless: true, // run headed browser
     viewport: { width: 1280, height: 720 },
 
     launchOptions: {
