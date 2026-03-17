@@ -27,5 +27,15 @@ test('Assignment for Dropdown',async({page})=>
   {
     console.log(product);
   }
+  let minPricePhone=productDetails.reduce((min,current)=>
+  {
+    return current.price<min.price ?current:min;
+  });
+  console.log(`minimum price phone name ${minPricePhone.name} price of phone ${minPricePhone.price}`);
+  let maxPhonePrice=productDetails.reduce((max,current)=>
+{
+  return current.price>max.price ? current:max;
+});
+console.log(`maximum price phone name ${maxPhonePrice.name} price ${maxPhonePrice.price} `);
 }
-)
+);
