@@ -25,7 +25,7 @@ test('Retrieve the Network Speed value for the Chrome process and compare it aga
     let chromeNetwoekSpeedTarget:string = (await page.locator('strong.chrome-network').innerText()).replace(' Mbps','');
     expect(chromeNetworkSpeed).toEqual(chromeNetwoekSpeedTarget);
 });
-test.only('Retrieve the Disk Space value for the Firefox process and compare it against the value displayed in the violet label.',async({page})=>
+test('Retrieve the Disk Space value for the Firefox process and compare it against the value displayed in the violet label.',async({page})=>
 {
     await page.goto('https://testautomationpractice.blogspot.com/');
     let diskSpace:string= (await page.locator("//td[contains(text(),'Firefox')]/following-sibling::td[contains(text(),'MB/s')]").innerText()).replace(/\s*MB\/s/, '');
