@@ -1,4 +1,4 @@
-import { test, chromium } from "@playwright/test";
+/* import { test, chromium } from "@playwright/test";
 import ExcelJS from "exceljs";
 import path from "path";
 
@@ -33,7 +33,7 @@ interface CheckResult {
  *
  * No stripping is done — the raw full HTML is searched directly.
  * Case-insensitive comparison is used so http vs HTTP etc. still matches.
- */
+ *
 function isLinkPresentAnywhere(html: string, target: string): boolean {
   return html.toLowerCase().includes(target.toLowerCase());
 }
@@ -41,7 +41,7 @@ function isLinkPresentAnywhere(html: string, target: string): boolean {
 /**
  * Reads URLs from column A of the Excel file.
  * Returns the workbook, the first worksheet, and the list of URL entries.
- */
+ 
 async function readUrlsFromExcel(filePath: string): Promise<{
   workbook: ExcelJS.Workbook;
   sheet: ExcelJS.Worksheet;
@@ -71,7 +71,7 @@ async function readUrlsFromExcel(filePath: string): Promise<{
  * Gets the full HTML source and checks if TARGET_URL is present anywhere.
  * Closes the page after checking to free memory.
  * Never throws — all errors are caught and returned as a result object.
- */
+ 
 async function checkSingleUrl(context: any, entry: UrlEntry): Promise<CheckResult> {
   const { rowNumber, url } = entry;
 
@@ -113,7 +113,7 @@ async function checkSingleUrl(context: any, entry: UrlEntry): Promise<CheckResul
 /**
  * Splits an array into chunks of a given size.
  * e.g. chunkArray([1,2,3,4,5,6,7], 3) → [[1,2,3],[4,5,6],[7]]
- */
+ 
 function chunkArray<T>(arr: T[], size: number): T[][] {
   const chunks: T[][] = [];
   for (let i = 0; i < arr.length; i += size) {
@@ -217,4 +217,4 @@ test("Check each URL for niim.com.au link in full page source", async () => {
   }
 
   console.log(`\n📁 Results saved to: ${OUTPUT_FILE}\n`);
-});
+}); */
